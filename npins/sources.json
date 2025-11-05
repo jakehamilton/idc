@@ -1,0 +1,18 @@
+{
+  "pins": {
+    "flake-compat": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nilla-nix",
+        "repo": "flake-compat"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "bbf23c5a71bcc582921145139464226e0fb82192",
+      "url": "https://github.com/nilla-nix/flake-compat/archive/bbf23c5a71bcc582921145139464226e0fb82192.tar.gz",
+      "hash": "165xl96d5f2xaawyiaj3cl8ccisrjvx5b1db8nfh18swaxyzdckn"
+    }
+  },
+  "version": 5
+}
