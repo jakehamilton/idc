@@ -149,7 +149,7 @@ let
     if input.loader == null then
       find (loader: loader.check input) loaders
     else
-      find (loader: loader.name == input.loader);
+      find (loader: loader.name == input.loader) loaders;
 
   process =
     input:
@@ -160,8 +160,8 @@ let
     assert ensure (builtins.isAttrs input.settings)
       "Settings must be an attribute set, but got ${builtins.typeOf input.settings}.";
     assert ensure (
-      input.loader == null || builtins.isString loader
-    ) "Loader must be a string or null, but got ${builtins.typeOf input.settings}.";
+      input.loader == null || builtins.isString input.loader
+    ) "Loader must be a string or null, but got ${builtins.typeOf input.loader}.";
     loader.load input;
 
   load =
